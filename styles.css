@@ -62,6 +62,7 @@ body {
 
 #result {
   position: fixed;
+  ;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -150,16 +151,15 @@ button {
 #histories {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .card {
-  width: 100%;
+  width: 30%;
   height: 100%;
   padding: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 22px;
+  display: block;
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -169,6 +169,11 @@ button {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.card p {
+  padding: 10px 0px;
 }
 
 #modal-background {
@@ -190,6 +195,8 @@ button {
   }
 
   .card {
+    width: 100%;
     flex-direction: column;
+    margin: 20px 0px;
   }
 }
